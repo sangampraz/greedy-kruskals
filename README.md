@@ -31,8 +31,8 @@ The program uses a predefined list of weighted edges where each line represents 
 ![alt text](Kruskals.png)
 
 #### Example:
-Input: [{1,2,6}, {1,3,1}, {1,4,5}, {2,3,5}, {2,5,3}, {3,4,5}, {3,5,6}, {3,6,4}, {4,6,2}, {5,6,6}]
-Output: 
+* Input: [{1,2,6}, {1,3,1}, {1,4,5}, {2,3,5}, {2,5,3}, {3,4,5}, {3,5,6}, {3,6,4}, {4,6,2}, {5,6,6}]
+* Output: 
 Edges in the MST:
 1-3-1
 4-6-2
@@ -44,13 +44,13 @@ Total weight = 15
 
 ## 5. Algorithm / Approach
 Kruskal's algorithm follows a greedy strategy:
-* 1. Sort all edges in increasing order of weight
-* 2. Initialize a disjoint set for each vertex
-* 3. Process edges in sortred order
-* 4. For each edge:
-  * - check whether the endpoints belong to diffferent sets
-  * - add the edge to MST if they do
-  * - merge the sets containing those vertices
+* Sort all edges in increasing order of weight
+* Initialize a disjoint set for each vertex
+* Process edges in sortred order
+* For each edge:
+  * check whether the endpoints belong to diffferent sets
+  * add the edge to MST if they do
+  * merge the sets containing those vertices
 * 5. continue until n-1 edges have been added to the MST
 
 This gurantees the minimum possibe spanning tree. 
