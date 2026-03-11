@@ -29,8 +29,8 @@ The program uses a predefined list of weighted edges where each line represents 
 ![alt text](Kruskals.png)
 
 #### Example:
-Input: [{1,2,6}, {1,3,1}, {1,4,5}, {2,3,5}, {2,5,3}, {3,4,5}, {3,5,6}, {3,6,4}, {4,6,2}, {5,6,6}]
-Output: 
+* Input: [{1,2,6}, {1,3,1}, {1,4,5}, {2,3,5}, {2,5,3}, {3,4,5}, {3,5,6}, {3,6,4}, {4,6,2}, {5,6,6}]
+* Output: 
 Edges in the MST:
 1-3-1
 4-6-2
