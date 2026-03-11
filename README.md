@@ -41,13 +41,13 @@ Total weight = 15
 
 ## 5. Algorithm / Approach
 Kruskal's algorithm follows a greedy strategy:
-* 1. Sort all edges in increasing order of weight
-* 2. Initialize a disjoint set for each vertex
-* 3. Process edges in sortred order
-* 4. For each edge:
-  * - check whether the endpoints belong to diffferent sets
-  * - add the edge to MST if they do
-  * - merge the sets containing those vertices
+* Sort all edges in increasing order of weight
+* Initialize a disjoint set for each vertex
+* Process edges in sortred order
+* For each edge:
+  * check whether the endpoints belong to diffferent sets
+  * add the edge to MST if they do
+  * merge the sets containing those vertices
 * 5. continue until n-1 edges have been added to the MST
 
 This gurantees the minimum possibe spanning tree. 
