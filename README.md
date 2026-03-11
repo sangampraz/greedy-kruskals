@@ -51,7 +51,7 @@ Kruskal's algorithm follows a greedy strategy:
   * check whether the endpoints belong to diffferent sets
   * add the edge to MST if they do
   * merge the sets containing those vertices
-* 5. continue until n-1 edges have been added to the MST
+* continue until n-1 edges have been added to the MST
 
 This gurantees the minimum possibe spanning tree. 
 
