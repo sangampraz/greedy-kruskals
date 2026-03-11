@@ -16,6 +16,7 @@ A MST must satisfy two condition, it connects all vertices in the graph and the 
 
 Kruskal's algorithm achieves this by greedily selecting the smallest available edge that does not form a cycle. 
 
+
 ## 3. Objectives
 The objective of this program are:
 * Implement Kruskal's greedy algorithm for computing a MST
@@ -23,6 +24,7 @@ The objective of this program are:
 * sort edges based on their weights
 * select edges that connect disjoint sets of vertices
 * compute and display the total weight of the MST
+
 
 ## 4. Input and Output
 The program uses a predefined list of weighted edges where each line represents (u, v, weight). The program outputs the edges included in the MST and the total cost. 
@@ -39,6 +41,7 @@ Edges in the MST:
 1-4-5
 Total weight = 15
 
+
 ## 5. Algorithm / Approach
 Kruskal's algorithm follows a greedy strategy:
 * 1. Sort all edges in increasing order of weight
@@ -51,6 +54,7 @@ Kruskal's algorithm follows a greedy strategy:
 * 5. continue until n-1 edges have been added to the MST
 
 This gurantees the minimum possibe spanning tree. 
+
 
 ## 6. Data Structures Used
 #### Edge Structure
@@ -67,7 +71,8 @@ Vector is used to store graph edges, parent sets for union find and resulting MS
 #### Disjoint Set
 Is is used to eficiently detect cycles. findSet() and unionSet() are used. 
 
-## 8. Time and Space Complexity
+
+## 7. Time and Space Complexity
 #### Time Complexity
 Sorting edges is O(m log m) and Union-Find is O(m α(m,n)). SO, the overall time complexity is O(m log n).
 
@@ -75,25 +80,26 @@ Sorting edges is O(m log m) and Union-Find is O(m α(m,n)). SO, the overall time
 The total space complexity is O(n + m).
 
 
-## 9. How to Compile and Run
+## 8. How to Compile and Run
 #### To compile:
 ```bash
 g++ main.cpp -o main.exe
 ```
-
 #### Run:
 ```bash
 .\main.exe
 ```
 
-## 11. Program Screenshots
+
+## 9. Program Screenshots
 ![alt text](kruskalprogramscreenshot.png)
 
-## 13. Challenges Faced
+
+## 10. Challenges Faced
 Some challenges I faced during implementation was handeling the vertex indexing and learning how the disjoint set functions worked. The graph uses vertices labeled from 1 to 6, while C++ cectors are 0-indexed causing an out of bound error when accessing the parent array. 
 
 
-## 14. What I Learned
+## 11. What I Learned
 Through this project, I gained a deeper understanding of greedy algorithms and how they are applied to graph problems. I learned how Kruskal's algorithm builds a minimum spanning tree by always chossing the smallest safe edge. 
 
 Additionally I learned how union find data structure helps efficiently detect cycles in a graph. 
